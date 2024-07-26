@@ -479,7 +479,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 
 /* Remove the inner border and padding in Firefox. */
@@ -563,7 +563,7 @@ textarea {
  * 2. Correct the outline style in Safari. */
 
 [type="search"] {
-  -webkit-appearance: textfield;
+  --webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -3326,11 +3326,13 @@ button.btn--pill {
   padding: 0;
   border-radius: 50px;
   width: 75%;
-  background: black;
+  /* background: rgb(5, 0, 0); */
   position: absolute;
   top: 41px;
   width: 33%;
   box-shadow: 0px 0px 20px 1px white;
+  background: rgba(5, 0, 0, 0.9); /* added alpha channel */
+  mix-blend-mode: lighten;
 }
 
 .s-header__nav ul {
@@ -4197,6 +4199,7 @@ button.btn--pill {
   line-height: 1.647;
   overflow-y: auto;
   position: relative;
+  cursor: default;
 }
 
 .modal-popup img {

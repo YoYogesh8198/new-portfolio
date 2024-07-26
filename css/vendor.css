@@ -923,6 +923,7 @@ button.swiper-pagination-bullet {
  *
  * ------------------------------------------------------------------- */
 .basicLightbox {
+  cursor: default;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +963,7 @@ button.swiper-pagination-bullet {
 .basicLightbox--visible {
   opacity: 1;
 }
+
 
 .basicLightbox__placeholder {
   max-width: 100%;
