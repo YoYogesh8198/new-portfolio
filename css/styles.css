@@ -3329,7 +3329,7 @@ button.btn--pill {
   background: black;
   position: absolute;
   top: 41px;
-  width: 40%;
+  width: 33%;
   box-shadow: 0px 0px 20px 1px white;
 }
 
@@ -3471,10 +3471,12 @@ button.btn--pill {
     left: 0;
   }
   .s-header__nav {
+    position: absolute;
+    left: 22%;
     font-size: var(--text-size);
     font-weight: 500;
     height: auto;
-    width: 100%;
+    width: auto;
     padding: var(--vspace-3) 6.8rem 3.6rem;
     -webkit-transform: translateY(-2rem);
     transform: translateY(-2rem);
@@ -3915,7 +3917,7 @@ button.btn--pill {
 .s-about__pic {
   width: var(--vspace-5);
   height: var(--vspace-5);
-  border: 1.6rem solid rgba(255, 255, 255, 0.02);
+  /* border: 1.6rem solid rgba(255, 255, 255, 0.02); */
   border-radius: 50%;
 }
 
@@ -4836,10 +4838,13 @@ button.btn--pill {
   }
 }
 
+@media screen and (max-width: 400px){
+  body{
+    cursor: none;
+  }
+}
 
-/* 
-
-*/
+/* cursor shadow*/
 .custom-cursor {
   position: fixed;
   opacity: 0;
@@ -4850,7 +4855,7 @@ button.btn--pill {
   border-radius: 50%;
   background-color: white;
   transition: transform 350ms ease;
-  transform: translate(-50%, -50%) scale(.3);
+  transform: translate(-50%, -50%) scale(0.3);
   z-index: 1000;
 }
 
@@ -4875,5 +4880,5 @@ button.btn--pill {
 }
 
 .block__link:hover {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
