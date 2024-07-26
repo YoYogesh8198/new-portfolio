@@ -3458,7 +3458,7 @@ button.btn--pill {
   }
   .s-header__nav-wrap,
   .s-header__nav {
-    background-color: #050505;
+    background-color: #020202;
   }
   .s-header__nav-wrap {
     -webkit-transform: scaleY(0);
@@ -3477,6 +3477,7 @@ button.btn--pill {
     font-weight: 500;
     height: auto;
     width: auto;
+    border-radius: 10px;
     padding: var(--vspace-3) 6.8rem 3.6rem;
     -webkit-transform: translateY(-2rem);
     transform: translateY(-2rem);
@@ -3536,7 +3537,11 @@ button.btn--pill {
     transition-delay: 0.5s;
   }
 }
-
+@media screen and (max-width: 1400px) {
+  .s-header__nav {
+    width: auto;
+  }
+}
 @media screen and (max-width: 400px) {
   .s-header__nav {
     padding: 6.8rem 4rem 3.6rem;
@@ -4838,9 +4843,12 @@ button.btn--pill {
   }
 }
 
-@media screen and (max-width: 400px){
-  body{
-    cursor: none;
+@media only screen and (max-width: 1000px) {
+  .custom-cursor {
+    display: none;
+  }
+  .custom-cursor:before {
+    display: none;
   }
 }
 
